@@ -1,0 +1,197 @@
+body{
+    background-color:azure;
+  }
+
+  form {
+    border-radius: 2rem;
+    background-color:rgb(52, 140, 140);
+    padding: 1rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+  }
+
+  #perpagediv{
+    float: right;
+  }
+
+  #navbar{
+    width: 100%;
+    background-color: #111;
+    display: flex;
+    flex-direction: row;
+    padding: 0.2rem;
+  }
+
+  #opensidebar{
+    background:none;
+    border: none;
+    color: aliceblue;
+    /* height: 5rem;
+    width: 3rem; */
+    margin-right: 3 rem;
+    float: inline-start;
+    padding: 0%;
+  }
+
+  #username{
+    color: aliceblue;
+    margin-left: 3rem;
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .entries{
+    border-radius: 2rem;
+    border: black  1px solid;
+  }
+
+  #closesidebar{
+    background: none;
+    border: none;
+    margin-top: 0.01rem;
+    margin-left: 0.01em;
+    
+  }
+
+  .sidebarbtn{
+    display: block;
+    background-color: rgba(155, 154, 154, 0.829);
+    
+    border-radius: 0.6em;
+    border: none;
+    width: 100%;
+    color: black;
+    cursor:pointer;
+    padding: 0.5em 0.3em;
+    margin: 1em auto;
+    
+  }
+
+  .sidebarbtn:hover{
+    transform: scale(0.96);
+    transition: 0.10ms;
+  }
+
+  #dialog{
+    border: 0.0001em solid black;
+    border-radius: 0.7rem;
+    margin-left: 0.6em ;
+    margin-top: 0.2em;
+    background-color: white;
+  }
+
+  #btn {
+    padding: 5px 8px;
+    border: none;
+    background-color: rgb(201, 87, 6);
+    border-radius: 0.2rem  ;
+    color: white;
+    cursor: pointer;
+  }
+  
+  #btn:hover {
+    border-radius: 3rem;
+    transition: 0.7s;
+  }
+
+  .deltask{
+    padding: 5px 8px;
+    border: none;
+    background-color:orange;
+    border-radius: 20px  ;
+    color: white;
+    cursor: pointer;
+  }
+
+  .deltask:hover{
+    background-color: orangered;
+  }
+
+  #task-table{
+    border:1px solid sandybrown;
+    padding: 0%;
+    margin: 0.9rem;    
+  }
+
+  #task-records{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: medium;
+  }
+
+  .recordsHeading{
+    background-color:gray;
+  }
+
+  .tasktr{
+    justify-content: center;
+    border-bottom: 1px solid black;
+    background-color: rgba(245, 245, 245, 0.938);
+  }
+
+  table th, table td {
+    padding: 8px 8px; 
+  }
+
+  #page-btn{
+    display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+      gap: 0.2rem;
+  }
+
+  #page-btn{
+        display: flex;
+        flex-direction:row; 
+        gap: 1px;   
+  }
+
+  .navmove{
+    background-color:cadetblue;
+    border: none;
+    border-radius: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    text-align: center;
+  }
+
+  .navmove:hover{
+    background-color: steelblue;
+  }
+
+  .jumppage{
+    background-color:cornflowerblue;
+    border: none;
+    border-radius: 0.2rem;
+    padding-left: 0.9rem;
+    padding-right: 0.9rem;
+    text-align: center;
+  }
+
+  .skip{
+    background-color:whitesmoke;
+    border: 1px solid black;
+    border-radius: 0.8rem;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    text-align: center;
+  }
+
+  .skip:hover{
+    background-color:cornflowerblue;
+  }
+
+  .skip:hover{
+    background-color: #0056b3;
+  }
+
+  #nav-btns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0.3rem;
+  }

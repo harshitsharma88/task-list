@@ -1,0 +1,83 @@
+body {
+  background-color: azure;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#login,
+#signup {
+  background-color: teal;
+  border-radius: 0.4em;
+  width: 50%;
+  padding: 1.4em;
+}
+
+#login{
+  border-right: 0.5rem solid black;
+}
+
+#signup{
+  background-color:grey;
+}
+
+.input{
+  border: none;
+  border-radius: 0.6em;
+}
+
+form {
+  border-radius: 0.4em;
+  padding: 1.3em;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0.02rem 0.8rem 0.5rem;
+}
+
+button {
+  padding: 0.4em 0.5em;
+  border: none;
+  background-color: #0056b3;
+  border-radius: 1.3em;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(3, 90, 253);
+  transform: scale(1.11);
+  transition: 0.8ms;
+  box-shadow: 0.1em 0.1em 0.1em rgba(188, 188, 188, 0.945);
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column; 
+  width: 100%;
+  height: 100%;
+  
+  
+}
+
+.outer-container {
+  /* display: flex;
+  justify-content: center; */
+  width: 65%;
+  height:55vh;
+  align-items: center;
+  margin: 6rem auto;
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0.8rem 0.8rem 0.8rem rgba(0, 0, 0, 0.783);
+  
+}
+
+@media only screen and (min-width: 768px) {
+  .form-container {
+    flex-direction: row; 
+    justify-content: space-between; 
+  }
+}

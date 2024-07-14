@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Task-List</title>
+        <link rel="stylesheet" href="/css/task.css">
+    </head>
+    <body>
+        <dialog id="dialog">
+          <div class="sidediv">
+            <button id="closesidebar" class="sidebardiv">☰</button>
+            <button id="deleteuserbtn" class="sidebarbtn">Delete Account</button>
+            <button id="logoutbtn" class="sidebarbtn">Logout</button>     
+          </div>
+                      
+        </dialog>
+        
+        <nav id="navbar"><button id="opensidebar" type="button">☰</button><div id="username"></div></nav>
+        
+        <form onsubmit="handleAddTask(event)">
+
+            <label for="title">Title</label>
+            <input id="title" name="title" type="text" class="entries" required/>
+            <label for="description">Description</label>
+            <input id="description" name="description" type="text" class="entries" required/>
+            <label for="deadline">Deadline</label>
+            <input id="deadline" name="deadline" type="date" class="entries" required/>
+            
+            <button id="btn" type="submit">Add</button>
+            <div id="perpagediv"><label for="perpage">Items per Page: </label>
+                <select onchange="changeItems()" id="perpage" class="item-per-page entries" name="perpage">
+                    <option value="2">2</option>
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+
+            
+        </form>
+
+        
+        <div id="task-table">
+            
+            <table id="task-records">
+                <tr class="recordsHeading">
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th>Deadline</th>
+                    <th>Status</th>
+                    <th>Update Status</th>
+                </tr>                
+            </table>
+            
+            <div id="page-btn">
+                <button id="firstpage" class="jumppage">0</button>
+                <button id="previous" class="navmove">&lt;</button>
+                <div id="nav-btns"></div>
+                <button id="next" class="navmove">&gt;</button>
+                <button id="lastpage" class="jumppage">0</button>
+            </div>
+
+        </div>           
+        
+    </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.8/axios.min.js"></script>
+    <script src="/scripting/task.js"> </script>
+
+</html>
