@@ -8,7 +8,7 @@ async function signUp(event){
     }
     try {
 
-        const res=await axios.post('http://54.173.150.124/user/signup',obj)
+        const res=await axios.post('http://52.91.16.45/user/signup',obj)
         console.log(res);
         event.target.name.value=""
         event.target.email.value=""
@@ -30,7 +30,7 @@ async function login(event){
         password:event.target.password.value
     }
     try {
-        const res= await axios.post('http://54.173.150.124/user/login',obj)
+        const res= await axios.post('http://52.91.16.45/user/login',obj)
 
         console.log(res);
         localStorage.setItem("token",res.data.token);

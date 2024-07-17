@@ -15,7 +15,7 @@ document.querySelector('#username').textContent = "Welcome "+localStorage.getIte
 
 document.querySelector("#logoutbtn").addEventListener('click',(event)=>{
     localStorage.clear();
-    location.replace("http://54.173.150.124")
+    location.replace("http://52.91.16.45")
 })
 
 document.querySelector("#deleteuserbtn").addEventListener('click',async(event)=>{
@@ -25,12 +25,12 @@ document.querySelector("#deleteuserbtn").addEventListener('click',async(event)=>
 
     await axios({
         method:'delete',
-        url:'http://54.173.150.124/task/delete-user',
+        url:'http://52.91.16.45/task/delete-user',
         headers:{Authorazation:token}
     });
 
     localStorage.clear();
-    location.replace("http://54.173.150.124");
+    location.replace("http://52.91.16.45");
 }
 else{
     dialog.open =false;
@@ -97,7 +97,7 @@ async function getAll() {
 
     try {
 
-        const result = await axios.get(`http://54.173.150.124/task/get-task/${itemsperpage}/${currentpage}`,{headers:{Authorazation:token}})
+        const result = await axios.get(`http://52.91.16.45/task/get-task/${itemsperpage}/${currentpage}`,{headers:{Authorazation:token}})
 
         result.data.response.forEach(element => {
             display(element);
@@ -226,7 +226,7 @@ async function handleAddTask(event){
             title:event.target.title.value
         }
 
-        const result= await axios.post('http://54.173.150.124/task/add-task',taskObj,{headers:{Authorazation:token}});
+        const result= await axios.post('http://52.91.16.45/task/add-task',taskObj,{headers:{Authorazation:token}});
         event.target.deadline.value=""
         event.target.description.value=""
         event.target.title.value=""
@@ -261,7 +261,7 @@ function display(object){
                 status:event.target.value
             }
 
-        await axios.patch('http://54.173.150.124/task/update-task',obj,{headers:{Authorazation:token}});
+        await axios.patch('http://52.91.16.45/task/update-task',obj,{headers:{Authorazation:token}});
            tr.cells[3].textContent=event.target.value;
 
         }catch(error){
@@ -274,7 +274,7 @@ function display(object){
 
     const result=await axios({
     method:'delete',
-    url:'http://54.173.150.124/task/delete-task',
+    url:'http://52.91.16.45/task/delete-task',
     data:object,
     headers:{Authorazation:token}})
 
